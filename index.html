@@ -4,39 +4,219 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="scss/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
-    <section>
+    <!-- Header Part Start -->
+<header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynav">
+            <ul class="navbar-nav ms-auto" id="custom__nav">
+              <li class="nav-item">
+                <a class="nav-link active_page" id="anchor__el" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="anchor__el" aria-current="page" href="#">My Learnings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+</header>
+    <!-- Header Part End -->
+    <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 py-3">
-                    <div class="inner_body">
-                        <h2>I am left Side</h2>
+                <div class="col-md-12">
+                    <div class="routes">
+                        <ul class="routes__current">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Lerning Resources</a></li>
+                                <li><a href="">Name of course</a></li>
+                                <li><a href="">Ratings</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-6 py-3">
-                    <div class="inner_body">
+            </div>
+            <div class="row justify-content-center">
+                <!-- All Ratings Part Start -->
+                <div class="col-md-4 py-3">
+                    <div class="all-ratings">
+                        <div class="heading">
+                            <h2>Ratings</h2>
+                        </div>
+                        <div class="all-ratings__total">
+                            <div class="total__rating">
+                                <h2>5.0</h2>
+                            </div>
+                            <div class="default__ratings">
+                                <ul class="">
+                                    <li><h5>&#9733;</h5></li>
+                                    <li><h5>&#9733;</h5></li>
+                                    <li><h5>&#9733;</h5></li>
+                                    <li><h5>&#9733;</h5></li>
+                                    <li><h5>&#9733;</h5></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>Based on <span>102</span> ratings</p>
+                    </div>
+                    <hr>
+                    <div class="count-ratings">
+                        <table class="table table-borderless count-ratings__table">
+                            <tbody>
+                                <tr>
+                             
+                                    <td>
+                                        <ul class="count__icon">
+                                            <li><h5>&#9733;</h5></li>
+                                            <li><h5>&#9733;</h5></li>
+                                            <li><h5>&#9733;</h5></li>
+                                            <li><h5>&#9733;</h5></li>
+                                            <li><h5>&#9733;</h5></li>
+                                        </ul>
+                                    </td>
+                                    <td><p>5 stars <span>(90)</span></p></td>
+                                  </tr>
+                              <tr>
+                           
+                                <td>
+                                    <ul class="count__icon">
+                                        <li><h5>&#9733;</h5></li>
+                                        <li><h5>&#9733;</h5></li>
+                                        <li><h5>&#9733;</h5></li>
+                                        <li><h5>&#9733;</h5></li>
+                                    </ul>
+                                </td>
+                                <td><p>4 stars <span>(7)</span></p></td>
+                           
+                              </tr>
+                              <tr>
+                          
+                                <td>
+                                    <ul class="count__icon">
+                                        <li><h5>&#9733;</h5></li>
+                                        <li><h5>&#9733;</h5></li>
+                                        <li><h5>&#9733;</h5></li>
+
+                                    </ul>
+                                </td>
+                                <td><p>3 stars <span>(5)</span></p></td>
+                              </tr>
+                              <tr>
+                             
+                                <td>
+                                    <ul class="count__icon">
+                                        <li><h5>&#9733;</h5></li>
+                                        <li><h5>&#9733;</h5></li>
+                                    </ul>
+                                </td>
+                                <td><p>2 stars <span>(2)</span></p></td>
+                              </tr>
+                              <tr>
+                         
+                                <td>
+                                    <ul class="count__icon">
+                                        <li><h5>&#9733;</h5></li>
+                                    </ul>
+                                </td>
+                                <td><p>1 stars <span>(1)</span></p></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                 <!-- All Ratings Part End -->
+
+
+                  <!-- Feedback Part Start -->
+                <div class="col-md-5 py-3">
+                    <div class="feedback">
+                      <h4>What your feedback?</h4>
                         <div class="rating-box">
-                            <div class="rating-container">
-                            <input type="radio" name="rating" value="5" id="star-5"> <label for="star-5">&#9733;</label>
-                            
-                            <input type="radio" name="rating" value="4" id="star-4"> <label for="star-4">&#9733;</label>
-                            
-                            <input type="radio" name="rating" value="3" id="star-3"> <label for="star-3">&#9733;</label>
-                            
-                            <input type="radio" name="rating" value="2" id="star-2"> <label for="star-2">&#9733;</label>
-                            
-                            <input type="radio" name="rating" value="1" id="star-1"> <label for="star-1">&#9733;</label>
+                            <p>Rate your experience (required)</p>
+                            <form id="form" class="rating-box__form">
+                           
+                                <div class="form__container">
+                                    <input type="radio" name="rating" value="5" id="star-5"> <label for="star-5">&#9733;</label>
+                                    
+                                    <input type="radio" name="rating" value="4" id="star-4"> <label for="star-4">&#9733;</label>
+                                    
+                                    <input type="radio" name="rating" value="3" id="star-3"> <label for="star-3">&#9733;</label>
+                                    
+                                    <input type="radio" name="rating" value="2" id="star-2"> <label for="star-2">&#9733;</label>
+                                    
+                                    <input type="radio" name="rating" value="1" id="star-1"> <label for="star-1">&#9733;</label>
+                                  </div>
+                                <label  class="form-label">Leave a review</label>
+                                <textarea class="form-control custom__comment__box" id="comment" rows="4" placeholder="Type your comment here"></textarea>
+                                <small class="err__msg"></small>
+                                <div class="submit__button">
+                                    <button>Send rate</button>
+                                </div>
+                            </form>
+                          
                           </div>
+                          <hr>
+                          <!-- ================= prev ratings ========= -->
+                          <h4>Previous ratings</h4>
+                          <div class="feedback__prev">
+                                <div class="user__feedback">
+                                    <div class="user__img">
+                                        <img src="./images/user.png" alt="">
+                                    </div>
+                                    <div class="user__name">
+                                        <h5>Maude Hall</h5>
+                                    </div>
+                                    <div class="feedback__date">
+                                       <span>10/10/10</span>
+                                    </div>
+                                </div>
+                                <p>That's a fantastic new app feature. You and your team did an excellent job of incorporating user testing feedback</p>
+                                <ul>
+                                    <li><h5>&#9733;</h5></li>
+                                    <li><h5>&#9733;</h5></li>
+                                    <li><h5>&#9733;</h5></li>
+                                    <li><h5>&#9733;</h5></li>
+                                    <li><h5>&#9733;</h5></li>
+                                </ul>
                           </div>
                     </div>
                 </div>
+                  <!-- Feedback Part End -->
+
+
                 <div class="col-md-3 py-3">
-                    <div class="inner_body">
-                        <h2>I am right Side</h2>
+                    <div class="card-main">
+                       <div class="card-main__img">
+                           <img src="./images/image.png" alt="">
+                           <span>Darmatology</span>
+                       </div>
+                       <div class="card-main__content">
+                           <h4>The Lowdown of Dry Eye and Contact Lenses</h4>
+                           <p>Do you suffer from pain, the sensation of having something in your eye </p>
+                           <div class="card__progress">
+                            <div class="card__progress__lebel"></div>
+                            <span>100% concluded</span>
+                        </div>
+                        <div class="share-box">
+                            <div class="share-box__icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-share-nodes"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                       </div>
+                       
                     </div>
                 </div>
             </div>
@@ -45,5 +225,7 @@
 
 
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/aa2a287348.js" crossorigin="anonymous"></script>
+    <script src="js/main/script.js"></script>
 </body>
 </html>

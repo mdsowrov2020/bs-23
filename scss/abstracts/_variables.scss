@@ -1,0 +1,13 @@
+$desktop: 991px;
+$mobile: 575px;
+// color variables
+$colors: (
+  text-color: #7c7a7a,
+  button-color: #3e3e,
+  rating-icon: red,
+  borders-color: #a1a1a1,
+);
+
+@function color($set-color) {
+  @return map-get($colors, $set-color);
+}

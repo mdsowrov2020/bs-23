@@ -1,0 +1,16 @@
+@mixin list {
+  display: inline-block;
+  list-style-type: none;
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
